@@ -144,7 +144,6 @@ PC用のスタイル
     text-decoration: underline;
 }
 
-/* この部分が原因だったので修正 */
 #nav-sp .menu {
     margin: 0 20px;
     height: 44px;
