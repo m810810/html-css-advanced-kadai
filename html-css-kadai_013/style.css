@@ -88,21 +88,22 @@ PC用のスタイル
     padding: 0;
   }
 
-  /* スマホ用ナビゲーション */
-  #nav-sp {
-    background-color: #ce933e;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 100;
-  }
+ /* スマホ用ナビゲーション */
+#nav-sp {
+  background-color: #ce933e;
+  position: fixed; /* スクロールしても表示されるように fixed を使用 */
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
 
-  #nav-sp ul {
-    padding-left: 0;
-  }
+ #nav-sp ul {
+  padding-left: 0;
+  margin: 0;
+}
 
   #nav-sp li {
     list-style: none;
@@ -116,9 +117,10 @@ PC用のスタイル
   }
 
   /* ナビゲーションメニュー用ロゴ */
-  #logo-sp {
-    margin: 80px 0 30px 20px;
-  }
+#logo-sp {
+  margin: 60px 0 30px 20px; /* 調整されたマージン */
+  display: block; /* ブロック要素として扱い上下中央寄せしやすくする */
+}
 
   /* ナビゲーションのリンクの装飾設定 */
   #nav-sp > a {
@@ -133,24 +135,25 @@ PC用のスタイル
     color: #ffffff;
   }
 
+/* ナビゲーションのリンクの装飾設定 */
 #nav-sp a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    margin: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin: 20px;
 }
 
 #nav-sp a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 #nav-sp .menu {
-    margin: 0 20px;
-    height: 44px;
-    font-size: 16px;
-    background-image: url(images/arrow.png);
-    background-repeat: no-repeat;
-    background-position: right top;
+  margin: 0 20px;
+  height: 44px;
+  font-size: 16px;
+  background-image: url(images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
   #nav-sp > a:active {
